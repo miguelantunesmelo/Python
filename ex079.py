@@ -10,4 +10,5 @@ while True:
     if r in 'Nn':
         break
 print('-=' * 30)
+números.sort()
 print(f'Você digitou os valores {números}')
