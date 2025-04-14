@@ -18,8 +18,8 @@ while True:
         break
 print('-=' * 30)
 print(f'Os dados foram {princ}')
-print(f'Ao todo, você cadastrou {len(princ)} pessoas. Peso de ', end='')
-print(f'O maior peso foi de {mai}Kg.')
+print(f'Ao todo, você cadastrou {len(princ)} pessoas. ')
+print(f'O maior peso foi de {mai}Kg. Peso de ', end='')
 for p in princ:
     if p[1] == mai:
         print(f'{p[0]} ', end='')
