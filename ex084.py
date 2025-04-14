@@ -1,11 +1,11 @@
 temp = []
 princ = []
-main = men = 0
+mai = men = 0
 while True:
     temp.append(str(input('Nome: ')))
     temp.append(str(input('Peso: ')))
     if len(princ) == 0:
-        main = men = temp[1]
+        mai = men = temp[1]
     else:
         if temp[1] > mai:
             mai = temp[1]
@@ -20,4 +20,7 @@ print('-=' * 30)
 print(f'Os dados foram {princ}')
 print(f'Ao todo, você cadastrou {len(princ)} pessoas.')
 print(f'O maior peso foi de {mai}Kg.')
+for p in princ:
+    if p[1] == mai:
+        print(f'{p[0]}')
 print(f'O menor peso foi de {men}Kg.')
