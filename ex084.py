@@ -11,3 +11,4 @@ while True:
         break
 print('-=' * 30)
 print(f'Os dados foram {princ}')
+print(f'Ao todo, você cadastrou {len(princ)} pessoas.')
