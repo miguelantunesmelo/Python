@@ -7,3 +7,5 @@ def escreva(msg):
 
 # Programa principal
 escreva('Gustavo Guanabara')
+escreva('Curso de Python no YouTube')
+escreva('CeV')
