@@ -14,4 +14,3 @@ def fatorial(n, show=False):
 # Programa Principal
 print(fatorial(5, show=False))
 
-          
