@@ -28,5 +28,5 @@ def resumo(preço=0, taxaa=10, taxar=5):
     print('-' * 30)
     print(f'Preço analisado: {moeda(preço)}')
     print(f'Dobro do preço: {dobro(preço, True)}')
-    print(f'Metade do preço: {metade{preço, True}}')
+    print(f'Metade do preço: {metade(preço, True)}')
     print('-' * 30)
