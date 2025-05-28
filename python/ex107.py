@@ -1,12 +1,5 @@
-def aumentar(preço, taxa):
-    res 
+import moeda 
 
-def diminuir(preço, taxa):
-
-
-def dobro(preço):
-
-
-def metade(preço):
-
-
+p = float(input('Digite o preço: R$'))
+print(f'A metade de R${p} é {moeda.metade(p)}')
+print(f'O dobro de R${p} é {moeda.dobro(p)}')
