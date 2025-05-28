@@ -13,5 +13,6 @@ def leiaInt(msg):
     return valor
 
 
+# Programa Principal
 n = leiaInt('Digite um número: ')
 print(f'Você acabou de digitar o número {n}')
