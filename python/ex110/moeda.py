@@ -29,4 +29,6 @@ def resumo(preço=0, taxaa=10, taxar=5):
     print(f'Preço analisado: \t{moeda(preço)}')
     print(f'Dobro do preço: \t{dobro(preço, True)}')
     print(f'Metade do preço: \t{metade(preço, True)}')
+    print(f'{taxaa}% de aumento: \t{aumentar(preço, taxaa, True)}')
+    print(f'{taxar}% de redução: \t\t{diminuir(preço, taxar, True)}')
     print('-' * 30)
