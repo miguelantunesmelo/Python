@@ -21,3 +21,12 @@ def metade(preço = 0, formato=False):
 def moeda(preço = 0, moeda = 'R$'):
     return f'{moeda}{preço:>.2f}'.replace('.',',')
 
+
+def resumo(preço=0, taxaa=10, taxar=5):
+    print('-' * 30)
+    print('RESUMO DO VALOR'.center(30))
+    print('-' * 30)
+    print(f'Preço analisado: {moeda(preço)}')
+    print(f'Dobro do preço: {dobro(preço, True)}')
+    print(f'Metade do preço: {metade{preço, True}}')
+    print('-' * 30)
