@@ -14,7 +14,7 @@ def dobro(preço = 0, formato=False):
 
 
 def metade(preço = 0, formato=False):
-    res = preço / 2 
+    res = preço / 2
     return res if formato is False else moeda(res)
 
 
