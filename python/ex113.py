@@ -9,5 +9,5 @@ def leiaInt(msg):
             return n
 
 
-num = leiaInt('Digite um valor: '))
+num = leiaInt('Digite um valor: ')
 print(f'O valor digitado foi {num}')
