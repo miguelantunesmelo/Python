@@ -8,6 +8,7 @@ if arquivoExiste(arq):
     print('Arquivo encontrado com sucesso!')
 else:
     print('Arquivo não encontrado!')
+    criarArquivo(arq)
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova Pessoa', 'Sair do Sistema'])
