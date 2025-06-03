@@ -12,5 +12,8 @@ def menu(lista):
     cabeçalho('MENU PRINCIPAL')
     c = 1
     for item in lista:
+        print(f'{c} - {item}')
+        c += 1
+    print(linha())
 
 
