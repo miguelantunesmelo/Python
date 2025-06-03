@@ -1,3 +1,3 @@
 from lib.interface import *
 
-menu(['opc01', 'opc02', 'opc03'])
+resposta = menu(['Criar Arquivo', 'Cadastrar Pessoas', 'Listar Pessoas','Sair do Sistema'])
