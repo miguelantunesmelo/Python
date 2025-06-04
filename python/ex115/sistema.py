@@ -17,6 +17,7 @@ while True:
         cabeçalho('NOVO CADASTRO')
         nome = str(input('Nome: '))
         idade = leiaInt('Idade: ')
+        cadastar(arq, nome, idade)
     elif resposta == 3:
         # Opção de sair do sitema.
         cabeçalho('Saindo do sistema... Até logo!')
