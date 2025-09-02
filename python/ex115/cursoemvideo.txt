@@ -2,3 +2,4 @@ José;35
 Miguel;18
 Luiz;48
 Josaine;44
+Andre;90
