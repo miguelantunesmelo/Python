@@ -16,5 +16,12 @@ for filme in filmes:
         print('Que pena que você não irá classificar mais os filmes.')
         break   # Encerra o loop principal
 
-    # Converte classificação 
+    # Converte classificação para um número inteiro 
+    classificacao = int(classificacao)
 
+    # Verifica se a classificação está dentro do intervalo válido 
+    if classificacao < 1 or classificacao > 5:
+        print('Por favor, digite uma classificação válida de 1 a 5.')
+    else:
+        # Exibe a classificação e passa para o próximo filme
+        print(f'Voçê classificou ')
