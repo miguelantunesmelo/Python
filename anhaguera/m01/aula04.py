@@ -15,4 +15,9 @@ media = calcular_media(notas)
 media_arredondada = arredondar_media(media)
 
 # Verifcar se os estudantes foram aprovados 
-situação = 'Aprovado' if media_arredondada >= 7 else 'Reprovado'
+situacao = 'Aprovado' if media_arredondada >= 7 else 'Reprovado'
+
+# Resultados 
+print('Notas dos estudades:', notas)
+print('Média das notas:', media_arredondada)
+print('Situação do estudante:', situacao)
