@@ -24,4 +24,7 @@ for filme in filmes:
         print('Por favor, digite uma classificação válida de 1 a 5.')
     else:
         # Exibe a classificação e passa para o próximo filme
-        print(f'Voçê classificou ')
+        print(f'Voçê classificou {filme} com {classificacao} estrelas.\n')
+
+# Mensagens de agradecimento ao finalizar 
+print('Obrigado por classificar os filmes!')
