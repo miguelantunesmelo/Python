@@ -13,4 +13,4 @@ for pessoa in nao_confirmados:
     print(pessoa)
 # Enviar lembretes aos não confirmados 
 
-print('\nEnviamdo lembretes para os convidados que ainda não confirmaram')
+print('\nEnviando lembretes para os convidados que ainda não confirmaram')
