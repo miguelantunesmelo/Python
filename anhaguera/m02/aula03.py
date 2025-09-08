@@ -22,3 +22,11 @@ class Carro(Veiculo):
     def acelerar(self, incremento):
         # Carros podem acelerar mais rápido.
         self.velocidade += incremento + self.potencia
+
+class Bicicleta(Veiculo):
+    def __init__(self, marca, modelo, ano, tipo):
+        super().__init__(marca, modelo, ano)
+        self.tipo = tipo
+
+    def status(self):
+        return f'Marca: {self.marca}, Modelo: {self.modelo}, Ano: {self.ano}'
