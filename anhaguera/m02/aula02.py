@@ -35,3 +35,9 @@ for participante in participantes:
 areas_de_interesse = np.array([interesse for participante in participantes for interesse in participante['interesses']])
 interesses_unicos, contagem = np.unique(areas_de_interesse, return_couts=True)
 area_mais_popular =interesses_unicos[np.argmax(contagem)]
+# Resultados 
+print('Regiões dos participantes:', regioes)
+print('Afiliações dos participantes:')
+for afiliacao, nomes in afiliacoes.items():
+    print(f'{afiliacao}: {','.join(nomes)}')
+print('Área de interesse mais popular:', area_mais_popular)
