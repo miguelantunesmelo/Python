@@ -34,3 +34,4 @@ for participante in participantes:
 # Usando NumPy para analisar áreas de interesse
 areas_de_interesse = np.array([interesse for participante in participantes for interesse in participante['interesses']])
 interesses_unicos, contagem = np.unique(areas_de_interesse, return_couts=True)
+area_mais_popular =interesses_unicos[np.argmax(contagem)]
