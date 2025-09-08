@@ -35,3 +35,7 @@ class Bicicleta(Veiculo):
 carro1 = Carro('Toyota', 'Corolla', 2022, 150)
 bicicleta1 = Bicicleta('Trek', 'Mountain Bike', 2021, 'MTB')
 
+# Acelerando o verificando o status 
+carro1.acelerar(50)
+bicicleta1.acelerar(50)
+
