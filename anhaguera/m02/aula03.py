@@ -19,4 +19,6 @@ class Carro(Veiculo):
         super().__init__(marca, modelo, ano)
         self.potencia = potencia
 
-    
+    def acelerar(self, incremento):
+        # Carros podem acelerar mais rápido.
+        self.velocidade += incremento + self.potencia
