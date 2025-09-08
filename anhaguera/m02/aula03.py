@@ -41,3 +41,6 @@ bicicleta1.acelerar(50)
 
 # Exibindo o status dos veículos
 print('Status do Carro:')
+print(bicicleta1.status())
+
+
