@@ -32,3 +32,5 @@ for participante in participantes:
         afiliacoes[afiliacao] = []
     afiliacoes[afiliacao].append(participante['nome'])
 # Usando NumPy para analisar áreas de interesse
+areas_de_interesse = np.array([interesse for participante in participantes for interesse in participante['interesses']])
+interesses_unicos, contagem = np.unique(areas_de_interesse, return_couts=True)
