@@ -1,29 +1,32 @@
 # Importe as bibliotecas necessárias 
 import numpy as np
-# Dados dos partcipantes 
+
+# Dados dos participantes 
 participantes = [
     {
         'nome': 'Alice',
-        'localização': 'EUA',
-        'afiliação': 'Universidade A',
+        'localizacao': 'EUA',
+        'afiliacao': 'Universidade A',
         'interesses': ['Física', 'Astronomia']
     },
-     {
+    {
         'nome': 'Bob',
-        'localização': 'Brasil',
-        'afiliação': 'Universidade B',
+        'localizacao': 'Brasil',
+        'afiliacao': 'Universidade B',
         'interesses': ['Biologia', 'Astronomia']
     },
     {
         'nome': 'Charlie',
-        'localização': 'Índia',
-        'afiliação': 'Universidade C',
+        'localizacao': 'Índia',
+        'afiliacao': 'Universidade C',
         'interesses': ['Química', 'Astronomia']
     }
     # Adicionando mais participantes conforme necessário
 ]
-# Usando sets para  identificar diferentes regiões dos participantes 
+
+# Usando sets para identificar diferentes regiões dos participantes 
 regioes = set(participante['localizacao'] for participante in participantes)
+
 # Usando um dicionário para categorizar afiliações
 afiliacoes = {}
 for participante in participantes:
@@ -31,13 +34,18 @@ for participante in participantes:
     if afiliacao not in afiliacoes:
         afiliacoes[afiliacao] = []
     afiliacoes[afiliacao].append(participante['nome'])
+
 # Usando NumPy para analisar áreas de interesse
 areas_de_interesse = np.array([interesse for participante in participantes for interesse in participante['interesses']])
-interesses_unicos, contagem = np.unique(areas_de_interesse, return_couts=True)
-area_mais_popular =interesses_unicos[np.argmax(contagem)]
+interesses_unicos, contagem = np.unique(areas_de_interesse, return_counts=True)
+
+# Descobrindo a área mais popular
+area_mais_popular = interesses_unicos[np.argmax(contagem)]
+
 # Resultados 
 print('Regiões dos participantes:', regioes)
 print('Afiliações dos participantes:')
 for afiliacao, nomes in afiliacoes.items():
-    print(f'{afiliacao}: {','.join(nomes)}')
+    print(f"{afiliacao}: {', '.join(nomes)}")
+
 print('Área de interesse mais popular:', area_mais_popular)
