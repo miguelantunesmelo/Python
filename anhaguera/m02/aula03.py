@@ -39,3 +39,5 @@ bicicleta1 = Bicicleta('Trek', 'Mountain Bike', 2021, 'MTB')
 carro1.acelerar(50)
 bicicleta1.acelerar(50)
 
+# Exibindo o status dos veículos
+print('Status do Carro:')
