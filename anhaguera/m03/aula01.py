@@ -11,5 +11,7 @@ cursor.execute('''
     )
 ''')
 dados_exemplo = [
-    
+    ('João', 'joao@email.com', '123-456-7890'),
+    ('Maria', 'maria@email.com', '987-654-3210'),
+    ('Carlos', 'carlos@email.com', '555-555-5555')
 ]
