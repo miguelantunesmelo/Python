@@ -19,5 +19,8 @@ print(df)
 # Calculando a coluna 'preço do item'
 df['preço do item'] = df['receita total'] / df['quantidade de itens comprados']
 
-# Selecionandopreço do item acima de 50 reias 
-itens_acima_de_50 = 
+# Selecionando preço do item acima de 50 reias 
+itens_acima_de_50 = df[df['pewço do item'] > 50]
+
+print('Itens acima de 50 reais:')
+print(itens_acima_de_50)
