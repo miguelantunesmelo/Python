@@ -47,3 +47,8 @@ anos.sort()
 contagem_por_ano = [anos.count(ano) for ano in anos]
 
 # Criar um gráfico de linha 
+plt.plot(anos, contagem_por_ano, marker='o', linesyle='-')
+plt.xlabel('Ano de Publicação')
+plt.ylabel('Número de Livros')
+plt.title('Distribuição de Livros na Biblioteca por Ano de Puvblicação')
+
