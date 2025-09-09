@@ -16,3 +16,10 @@ biblioteca = []
 # Lista para armazenar anos de publicação 
 anos = []
 
+# Função para adicionar um livro à biblioteca
+def adicionar_livro(titulo, autor, ano_publicacao)
+    novo_livro = Livro(titulo, autor, ano_publicacao)
+    biblioteca.append(novo_livro)
+    anos.append(ano_publicacao)  # Adicona o ano à lista anos
+    print(f'O livro {titulo} foi adicionado à biblioteca.')
+
