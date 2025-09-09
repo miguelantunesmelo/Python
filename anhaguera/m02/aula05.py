@@ -39,4 +39,7 @@ adicionar_livro('Apanhador no Campo de Centeio', 'J.D. Salinger', 1951)
 # Listar todos os livros na biblioteca 
 listar_livros()
 
-# Criar 
+# Criar um gráfico de livros por anos
+anos = list(set(anos))  # Remove duplicatas dos anos
+anos.sort()
+
