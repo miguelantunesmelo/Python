@@ -20,8 +20,8 @@ conn.commit()
 
 # READ ( Leitura e exibição dos contatos)
 cursor.execute('SELECT * FROM Contatos')
-contatos_id = 2
-cursor.execute('UPDATE Contatos SET telefone = ? WHERE id = ?', (novo_telefone, contatos_id))
-conn.commit
-
-
+contatos = cursor.fetchall()
+print('Contatos:')
+for contato in contatos:
+    print(contato)
+# UPDATE
