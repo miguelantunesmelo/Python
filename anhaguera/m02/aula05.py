@@ -43,3 +43,7 @@ listar_livros()
 anos = list(set(anos))  # Remove duplicatas dos anos
 anos.sort()
 
+# Contagem de livros por ano
+contagem_por_ano = [anos.count(ano) for ano in anos]
+
+# Criar um gráfico de linha 
