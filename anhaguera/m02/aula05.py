@@ -10,3 +10,6 @@ class Livro:
     def __str__(self):
         return f'{self.titulo} por {self.autor}, Publicado em {self.ano_publicacao}'
     
+# Criar uma lista de livros 
+biblioteca = []
+
