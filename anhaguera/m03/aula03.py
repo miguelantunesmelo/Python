@@ -15,3 +15,9 @@ print(df)
 # Duplicando uma linha 
 df.drop_duplicates(keep='last', inplace=True)
 print(df)
+
+# Calculando a coluna 'preço do item'
+df['preço do item'] = df['receita total'] / df['quantidade de itens comprados']
+
+# Selecionandopreço do item acima de 50 reias 
+itens_acima_de_50 = 
