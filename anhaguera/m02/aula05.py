@@ -30,3 +30,9 @@ def listar_livros():
         print(livro)
 
 # Adicionar alguns livros à biblioteca
+adicionar_livro('Dom Quixote', 'Miguel de Cervantes', 1605)
+adicionar_livro('Orgulho e Preconceito', 'Jane Austen', 1967)
+adicionar_livro('1984', 'George Orwell', 1949)
+adicionar_livro('Cem Anos de Solidão', 'Gabriel Garcia Marquez', 1967)
+adicionar_livro('Apanhador no Campo de Centeio', 'J.D. Salinger', 1951)
+
