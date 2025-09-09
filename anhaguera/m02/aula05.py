@@ -17,7 +17,7 @@ biblioteca = []
 anos = []
 
 # Função para adicionar um livro à biblioteca
-def adicionar_livro(titulo, autor, ano_publicacao)
+def adicionar_livro(titulo, autor, ano_publicacao):
     novo_livro = Livro(titulo, autor, ano_publicacao)
     biblioteca.append(novo_livro)
     anos.append(ano_publicacao)  # Adicona o ano à lista anos
@@ -52,3 +52,10 @@ plt.xlabel('Ano de Publicação')
 plt.ylabel('Número de Livros')
 plt.title('Distribuição de Livros na Biblioteca por Ano de Puvblicação')
 
+# Adicionar rótulos aos pontos de dados
+for i, vaor in enumerate(contagem_por_ano):
+    plt.text(anos[i], valor, str(valor), ha='center', va='bottom')
+    
+plt.grid(True)
+
+plt.show()
