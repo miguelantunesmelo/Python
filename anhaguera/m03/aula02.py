@@ -13,4 +13,6 @@ serie_idades = pd.Series(dados['Idade'], index=dados['Nome'])
 print('Série de Idades:')
 print(serie_idades)
 
-#
+# Calcular a média das idades 
+media_idades = serie_idades.mean()
+print('\nMédia de Idades:', media_idades)
