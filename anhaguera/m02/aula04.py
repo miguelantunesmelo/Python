@@ -11,4 +11,8 @@ plt.bar(meses, vendas, color='royalblue')
 plt.xlabel('Mês')
 plt.ylabel('Vendas (em unidades)')
 
-# Adicionar 
+# Adicionar um título ao gráfico
+plt.title('Vendas Mensais')
+
+# Mostar o gráfico
+plt.show()
