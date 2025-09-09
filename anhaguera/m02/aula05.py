@@ -36,3 +36,7 @@ adicionar_livro('1984', 'George Orwell', 1949)
 adicionar_livro('Cem Anos de Solidão', 'Gabriel Garcia Marquez', 1967)
 adicionar_livro('Apanhador no Campo de Centeio', 'J.D. Salinger', 1951)
 
+# Listar todos os livros na biblioteca 
+listar_livros()
+
+# Criar 
