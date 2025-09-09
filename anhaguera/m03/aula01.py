@@ -24,4 +24,9 @@ contatos = cursor.fetchall()
 print('Contatos:')
 for contato in contatos:
     print(contato)
-# UPDATE
+# UPDATE (Atualização do número de telefone do contato com ID 2)
+
+novo_telefone = '999-999-9999'
+contato_id = 2
+cursor.execute('UPDATE Contatos SET telefone = ? WHERE id = ?', (novo_telefone, contato_id))
+conn.commit
