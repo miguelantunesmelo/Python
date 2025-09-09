@@ -11,3 +11,7 @@ data = {
 df = pd.DataFrame(data)
 
 print(df)
+
+# Duplicando uma linha 
+df.drop_duplicates(keep='last', inplace=True)
+print(df)
