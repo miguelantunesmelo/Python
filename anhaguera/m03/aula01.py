@@ -3,7 +3,7 @@ import sqlite3
 conn = sqlite3.connect('contatos.db')
 cursor = conn.cursor()
 cursor.execute('''
-    CREATE TABLE IF NOT EXIST Contatos (
+    CREATE TABLE IF NOT EXISTS Contatos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nome TEXT,
         email TEXT,
@@ -37,3 +37,4 @@ contato_id_para_excluir = 1
 cursor.execute('DELETE FROM Contatos WHERE id = ?', (contato_id_para_excluir,))
 conn.commit()
 # Fechando a conexão
+conn.close()
