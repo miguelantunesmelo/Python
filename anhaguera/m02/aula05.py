@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from collections import Counter
 
 # Classe para representar um livro 
 class Livro:
@@ -20,8 +21,8 @@ anos = []
 def adicionar_livro(titulo, autor, ano_publicacao):
     novo_livro = Livro(titulo, autor, ano_publicacao)
     biblioteca.append(novo_livro)
-    anos.append(ano_publicacao)  # Adicona o ano à lista anos
-    print(f'O livro {titulo} foi adicionado à biblioteca.')
+    anos.append(ano_publicacao)  # Adiciona o ano à lista anos
+    print(f'O livro "{titulo}" foi adicionado à biblioteca.')
 
 # Função para listar todos os livros na biblioteca
 def listar_livros():
@@ -39,23 +40,20 @@ adicionar_livro('Apanhador no Campo de Centeio', 'J.D. Salinger', 1951)
 # Listar todos os livros na biblioteca 
 listar_livros()
 
-# Criar um gráfico de livros por anos
-anos = list(set(anos))  # Remove duplicatas dos anos
-anos.sort()
-
 # Contagem de livros por ano
-contagem_por_ano = [anos.count(ano) for ano in anos]
+contagem = Counter(anos)
+anos_unicos = sorted(contagem.keys())
+contagem_por_ano = [contagem[ano] for ano in anos_unicos]
 
 # Criar um gráfico de linha 
-plt.plot(anos, contagem_por_ano, marker='o', linesyle='-')
+plt.plot(anos_unicos, contagem_por_ano, marker='o', linestyle='-')
 plt.xlabel('Ano de Publicação')
 plt.ylabel('Número de Livros')
-plt.title('Distribuição de Livros na Biblioteca por Ano de Puvblicação')
+plt.title('Distribuição de Livros na Biblioteca por Ano de Publicação')
 
 # Adicionar rótulos aos pontos de dados
-for i, vaor in enumerate(contagem_por_ano):
-    plt.text(anos[i], valor, str(valor), ha='center', va='bottom')
-    
-plt.grid(True)
+for i, valor in enumerate(contagem_por_ano):
+    plt.text(anos_unicos[i], valor, str(valor), ha='center', va='bottom')
 
+plt.grid(True)
 plt.show()
