@@ -8,3 +8,6 @@ data = {
     'receita total': [120, 80, 60, 120, 90]
 }
 
+df = pd.DataFrame(data)
+
+print(df)
