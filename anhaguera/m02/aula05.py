@@ -23,3 +23,10 @@ def adicionar_livro(titulo, autor, ano_publicacao)
     anos.append(ano_publicacao)  # Adicona o ano à lista anos
     print(f'O livro {titulo} foi adicionado à biblioteca.')
 
+# Função para listar todos os livros na biblioteca
+def listar_livros():
+    print('Livros na Biblioteca:')
+    for livro in biblioteca:
+        print(livro)
+
+# Adicionar alguns livros à biblioteca
