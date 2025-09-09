@@ -15,3 +15,6 @@ dados_exemplo = [
     ('Maria', 'maria@email.com', '987-654-3210'),
     ('Carlos', 'carlos@email.com', '555-555-5555')
 ]
+cursor.executemany('INSERT INTO Contatos (nome, email, telefone) VALUES (?, ?, ?)', dados_exemplo)
+conn.commit()
+
