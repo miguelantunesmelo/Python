@@ -9,4 +9,8 @@ dados = {
 # Criar uma série a partir do dicionário
 serie_idades = pd.Series(dados['Idade'], index=dados['Nome'])
 
-# Exibir 
+# Exibir a série de idades
+print('Série de Idades:')
+print(serie_idades)
+
+#
