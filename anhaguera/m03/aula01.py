@@ -18,3 +18,10 @@ dados_exemplo = [
 cursor.executemany('INSERT INTO Contatos (nome, email, telefone) VALUES (?, ?, ?)', dados_exemplo)
 conn.commit()
 
+# READ ( Leitura e exibição dos contatos)
+cursor.execute('SELECT * FROM Contatos')
+contatos_id = 2
+cursor.execute('UPDATE Contatos SET telefone = ? WHERE id = ?', (novo_telefone, contatos_id))
+conn.commit
+
+
