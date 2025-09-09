@@ -1,4 +1,4 @@
-import matplotlib.pylot as plt
+import matplotlib.pyplot as plt
 
 # Dados de exemplo
 meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio']
