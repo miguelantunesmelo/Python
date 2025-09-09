@@ -30,3 +30,10 @@ novo_telefone = '999-999-9999'
 contato_id = 2
 cursor.execute('UPDATE Contatos SET telefone = ? WHERE id = ?', (novo_telefone, contato_id))
 conn.commit
+
+# DELETE (EXclusão do conato com ID 1)
+contato_id_para_excluir = 1
+
+cursor.execute('DELETE FROM Contatos WHERE id = ?', (contato_id_para_excluir,))
+conn.commit()
+# Fechando a conexão
