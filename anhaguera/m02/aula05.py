@@ -13,3 +13,6 @@ class Livro:
 # Criar uma lista de livros 
 biblioteca = []
 
+# Lista para armazenar anos de publicação 
+anos = []
+
