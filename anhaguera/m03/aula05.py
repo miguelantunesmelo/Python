@@ -13,3 +13,8 @@ cursor.execute('''
     )
 ''')
 
+# Passo 3: Inserir um novo funcionário na tabela
+novo_funcionario = (1, 'João', 'Analista', 5000.00)
+cursor.execute('INSERT INTO funcionarios VALUES (?, ?, ?, ?)', novo_funcionario)
+conn.commit()
+
