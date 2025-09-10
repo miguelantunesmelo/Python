@@ -8,6 +8,6 @@ app = Flask(__name__)
 def hello():
     return 'Bem-vindo ao back-end simples com Flask!'
 
-# Executa a aplicação no host e na porta especificas
-if __name__ == '_main_':
+# Executa a aplicação no host e na porta específicas
+if __name__ == '__main__':
     app.run(host='localhost', port=5000)
