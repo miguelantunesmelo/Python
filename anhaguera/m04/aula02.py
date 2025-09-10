@@ -22,3 +22,5 @@ Builder.load_string('''
                     text: 'Content for Tab 2'
 ''')
 
+class TabsLayout(BoxLayout):
+    pass
