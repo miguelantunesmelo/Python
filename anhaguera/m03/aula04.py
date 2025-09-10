@@ -11,4 +11,3 @@ plt.xlabel('Período (Time)')
 plt.ylabel('Total de Gastos')
 plt.title('Total de Gastos por Período (Almoço ou Jantar)')
 plt.show()
-
